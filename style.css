@@ -16,8 +16,8 @@
 
 
 
-.header-section{
-  background-color: #110523f5;
+.header-section, .about-section{
+  background-color: #100523f5;
 }
    /* navbar styles */
 .navbar{
@@ -185,3 +185,118 @@
 }
 
 
+  /* about-section styles */
+  
+  .about-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 14px;
+  }
+  .about-text p{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.427);
+    margin-bottom: 70px;
+  }
+  hr{
+    border: 1px solid rgba(128, 128, 128, 0.148);
+  }
+
+  .statistics-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .stats-item h2{
+    font-size: 2.7rem;
+    color: rgba(0, 255, 136, 1);
+    margin-bottom: 12px;
+  }
+  .stats-item p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.616);
+  }
+
+    /* Why choose card section styles */
+
+  .card-section{
+    background: rgba(35, 14, 61, 1);
+    color: white;
+    
+  }
+  .card-title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .card-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    padding-bottom: 80px;
+  }
+   .card-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    min-width: 320px;
+    min-height: 150px;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24) ;
+  }
+
+  .card-style h3{
+    font-size: 1.4rem;
+  }
+  .card-style p{
+    font-size: 1rem;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.642);
+    margin-top: 15px;
+  }
+  .card-style img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+  }
+
+  .card-one{
+    grid-row: 1 / 2 span;
+  }
+  .card-two, .card-three{
+    grid-column: 2 / 2 span;
+  }
+  .card-four{
+    grid-column: 1 / 2 span;
+  }
