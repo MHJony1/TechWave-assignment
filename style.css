@@ -21,20 +21,13 @@
 }
    /* navbar styles */
 .navbar{
-  box-sizing: border-box;
-  /* border-bottom: 1px solid rgba(65, 37, 103, 1); */
-  box-shadow: 0 10px 20px -5px rgba(26, 11, 46, 0.925);
   color: white;
-  max-width: 1200px;
+  max-width:1200px;
   margin: 0 auto;
   padding: 15px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.border-line{
-  max-width: 100%;
-  border-bottom: 1px solid rgba(75, 34, 132, 0.548);
 }
 
 .navbar h1{
@@ -68,26 +61,31 @@
   cursor: pointer;
 }
 
+ .hamburger-icon{
+  display: none;
+}
+
   /* hero section styles */
 
 .hero-section{
   background-image: url(./assets/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
-  height: 80vh;
+  background-size: cover;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   padding-top: 100px;
   padding-bottom: 100px;
+  border-top: 1px solid rgba(75, 34, 132, 0.548) ;
 }
 
 .circle-section{
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 20.62543rem;
+  height: 20.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,9 +135,9 @@
 }
 
 .banner-content p{
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.425);
+  color: rgba(255, 255, 255, 0.776);
   margin-bottom: 24px;
 }
 
@@ -155,8 +153,7 @@
   gap: 7px;
   border: 2px solid rgb(156, 34, 243);
   border-radius: 40px;
-  padding: 10px 18px;
-  background-color: linear-gradient(47.64deg, rgb(253, 236, 51),rgb(235, 45, 178),rgb(156, 34, 243));
+  padding: 12px 20px;
   cursor: pointer;
   
 }
@@ -207,33 +204,34 @@
     margin-bottom: 14px;
   }
   .about-text p{
-    font-size: .8rem;
-    color: rgba(255, 255, 255, 0.427);
+    font-size: .9rem;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.772);
     margin-bottom: 70px;
+
   }
   hr{
     border: 1px solid rgba(128, 128, 128, 0.148);
   }
 
   .statistics-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
     text-align: center;
+    padding-top: 100px;
+    padding-bottom:80px ;
   }
 
   .stats-item h2{
-    font-size: 2.7rem;
+    font-size: 2.9rem;
     color: rgba(0, 255, 136, 1);
     margin-bottom: 12px;
   }
   .stats-item p{
     font-size: .9rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.616);
+    color: rgba(255, 255, 255, 0.895);
   }
 
     /* Why choose card section styles */
@@ -247,7 +245,7 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 30px;
   }
 
@@ -260,15 +258,15 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     gap: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
    .card-style{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    min-width: 320px;
-    min-height: 150px;
+    /* min-width: 250px;
+    min-height: 150px; */
     background-color: rgba(53, 17, 101, 0.4);
     padding: 30px;
     border-radius: 30px;
@@ -300,3 +298,96 @@
   .card-four{
     grid-column: 1 / 2 span;
   }
+
+
+
+
+     /* Responsive layout design for mobile device */
+
+
+ @media screen and (max-width:576px){
+     /* navbar section responsive */
+
+   .menu, .nav-btn{
+    display: none;
+   }  
+   .hamburger-icon{
+    display: block;
+   }
+   .navbar{
+    padding: 15px 15px;
+   }
+      /* hero section responsive */
+
+   .hero-section{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: auto;
+   }
+   .circle-section{
+    width: 16rem;
+    height: 17rem;
+   }
+   .banner-content p{
+    text-align: center;
+    max-width: 80%;
+   }
+   .spotify-btn, .subscribe-btn{
+    padding: 15px 30px;
+   }
+   .btn-one, .btn-two{
+    font-size: 1.1rem;
+   }
+
+    /* About section responsive */
+   .about-text{
+    padding: 0 15px;
+   }
+   .about-text p{
+    font-size: 1.1rem;
+    line-height: 22px;
+    margin-bottom: 50px;
+   }
+    br{
+      display: none;
+    }
+    .none{
+      display: block;
+    }
+    hr{
+      max-width: 85%;
+      margin: 0 auto;
+    }
+   .statistics-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    padding-bottom: 35px;
+   } 
+
+   /* card section responsive */
+
+   .card-title{
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 15px;
+   }
+   .card-container{
+   grid-template-columns: 1fr;
+   /* grid-template-rows: repeat(1, 1fr); */
+   }
+   .card-style{
+    width: 100%;
+   }
+
+   /* .card-one{
+    grid-row: 1 / 1 span;
+   }
+   .card-two, .card-three{
+    grid-column: 2 / 1 span;
+   }
+   .card-four{
+    grid-column: 1 /1 span;
+   } */
+   }
+
+ 
