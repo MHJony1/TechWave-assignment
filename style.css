@@ -1,0 +1,187 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+   /* shared styles */
+
+.fonts{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}   
+
+  /* shared styles section */
+
+
+
+.header-section{
+  background-color: #110523f5;
+}
+   /* navbar styles */
+.navbar{
+  box-sizing: border-box;
+  /* border-bottom: 1px solid rgba(65, 37, 103, 1); */
+  box-shadow: 0 10px 20px -5px rgba(26, 11, 46, 0.925);
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.border-line{
+  max-width: 100%;
+  border-bottom: 1px solid rgba(75, 34, 132, 0.548);
+}
+
+.navbar h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.heading-color{
+  background: linear-gradient(to right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+  background-clip: text;
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent;
+}
+.menu{
+  display: flex;
+  gap: 32px;
+}
+.menu a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: .9rem;
+}
+
+.nav-btn{
+  font-size: .8rem;
+  font-weight: 500;
+  padding: 10px 18px;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(47.64deg, rgb(253, 236, 51),rgb(235, 45, 178),rgb(156, 34, 243));
+  cursor: pointer;
+}
+
+  /* hero section styles */
+
+.hero-section{
+  background-image: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.circle-section{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px;
+}
+.circle-image{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 100%;
+  border-color: rgba(235, 45, 178, 0.292);
+}
+
+.mic-icon{
+  position: absolute;
+  width: 35%;
+}
+
+.badge{
+  color: black;
+  background-color: #00ff88;
+  font-size: .9rem;
+  font-weight: bold;
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 255, 136, 0.5);
+  cursor: pointer;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.banner-content h1{
+  font-size: 3.2rem;
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+
+.banner-content p{
+  font-size: .8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.425);
+  margin-bottom: 24px;
+}
+
+.banner-btn{
+  display: flex;
+  gap: 10px;
+  
+}
+.spotify-btn, .subscribe-btn{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border: 2px solid rgb(156, 34, 243);
+  border-radius: 40px;
+  padding: 10px 18px;
+  background-color: linear-gradient(47.64deg, rgb(253, 236, 51),rgb(235, 45, 178),rgb(156, 34, 243));
+  cursor: pointer;
+  
+}
+.spotify-btn{
+  background: linear-gradient(47.64deg, rgb(253, 236, 51),rgb(235, 45, 178),rgb(156, 34, 243));
+  border: none;
+}
+
+.subscribe-btn{
+  border: 1px solid rgba(0, 255, 136, 0.5);
+}
+
+.btn-one{
+  font-size: .9rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.btn-two{
+  font-size: .9rem;
+  background: transparent;
+  border: none;
+  color: rgba(0, 255, 136, 1);
+  cursor: pointer;
+}
+
+
