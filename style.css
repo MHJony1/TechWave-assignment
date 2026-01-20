@@ -14,7 +14,12 @@
 
   /* shared styles section */
 
+.meet-host, .featured-section{
+ background-color: rgba(26, 11, 46, 1);
+ color: white;
+ padding-bottom: 80px;
 
+}
 
 .header-section, .about-section{
   background-color: #100523f5;
@@ -300,20 +305,60 @@
   }
 
     /* featured-section styles */
+  .featured-title{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 25px;
+  }
 
+  .featured-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .featured-card{
+    background: rgba(37, 13, 68, 1);
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+  }
+  .video-container{
+    width: 350px;
+    height: 180px;
+  }
+  .video-container iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 24px 24px 0px 0px;;
+  }
+  .card-content{
+    padding: 20px;
+  }
+  .card-content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.852);
+  }
+  .duration{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+    color: #00ff88;
+    font-size: 1rem;
+  }
 
        /* meet host section styles */
-
-    .meet-host{
-      background-color: rgba(26, 11, 46, 1);
-      color: white;
-      padding-bottom: 80px;
-
-    }
+       
     .host-title{
       font-size: 2.7rem;
       text-align: center;
-      padding-top: 60px;
+      padding-top: 50px;
     }
     .host-container{
       max-width: 1080px;
@@ -326,6 +371,7 @@
       align-items: center;
       gap: 25px;
       padding: 35px;
+      margin-bottom: 30px;
       
     }
     .host-content h2{
