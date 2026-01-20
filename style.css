@@ -261,7 +261,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: auto;
     gap: 20px;
     padding-bottom: 60px;
   }
@@ -470,29 +470,39 @@
       /* hero section responsive */
 
    .hero-section{
-     /* background-image: url(./assets/header\ mobile.png);
-     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    background-size: cover; */
-    width: 100%; 
-    /* padding-top: 40px;
-    padding-bottom: 30px; */
-    height: 100%;
+    height: auto;
+    padding-top: 1px;
+    padding-bottom: 40px;
    }
    .circle-section{
     width: 16rem;
     height: 17rem;
    }
-   /* .banner-content{
-    display: none;
-   } */
+   .mic-icon{
+    width: 25%;
+    position: absolute;
+    top:60%;
+   }
+   .circle-image{
+    width: 80%;
+    position: absolute;
+    top: 40%;
+   }
+   .badge{
+    top: 110px;
+   }
+   .banner-content h1{
+    margin-top: 20px;
+   }
+   
    .banner-content p{
     text-align: center;
     max-width: 80%;
    }
    .spotify-btn, .subscribe-btn{
-    padding: 15px 30px;
-    
+    padding: 10px 20px;
    }
    .btn-one, .btn-two{
     font-size: 1.1rem;
@@ -526,22 +536,27 @@
    /* card section responsive */
 
    .card-title{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-top: 30px;
     padding-bottom: 15px;
    }
    .card-container{
    grid-template-columns: 1fr;
-   /* grid-template-rows: repeat(1, 1fr); */
+   grid-template-rows: auto;
+   padding: 0 20px;
+   width: 100%;
    }
    .card-style{
-    width: 100%;
+   min-height: auto; 
+   width: 100%;
+   box-sizing: border-box;
    }
 
     /* featured and host section responsive */
 
    .featured-title{
     padding-top: 30px; 
+    font-size: 2rem;
    } 
    .featured-container{
     flex-direction: column;
@@ -558,6 +573,7 @@
    }
    .host-title{
     padding-top: 0px;
+    font-size: 2rem;
    }
    .host-container{
     flex-direction: column;
@@ -581,7 +597,26 @@
     padding: 10px;
    }
 
+     /* footer-section responsive*/
 
+   .footer-section{
+     padding: 15px 50px;
+    }
+    .social-content{
+      padding-left: 90px;
+      gap: 5px;
+    }
+   .social-link{
+    flex-wrap: wrap ;
+    gap: 10px;
+   }
+   .footer-content h1{
+    margin-top: 20px;
+    font-size: 2.9rem;
+   }
+   .footer-end{
+    margin-bottom: 20px;
+   }
    }
 
  
